@@ -1,7 +1,7 @@
 require 'yaml'
 
 def load_library
-
+YAML.load_file
 #puts thing.inspect
 end
 
