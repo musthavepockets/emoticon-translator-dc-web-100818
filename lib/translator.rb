@@ -1,8 +1,9 @@
 require 'yaml'
 
 def load_library
-  emoticons = {"get_meaning" => {}, "get_japanese_emoticon"}(./lib/emoticons.yml).load_file
-  thing.inspect
+  emoticons = {"get_meaning" => {}, "get_emoticon" => {}}
+  (./lib/emoticons.yml).load_file
+  emoticons.inspect
 end
 
 def get_japanese_emoticon
