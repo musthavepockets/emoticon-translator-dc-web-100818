@@ -3,7 +3,7 @@ require 'yaml'
 def load_library
   emoticons = {"get_meaning" => {}, "get_emoticon" => {}}
   YAML.load_file('emoticons.yml')
-  meaning[0]
+  emoticons[get_meaning][0]
   meaning[1]
   emoticons.inspect
 end
