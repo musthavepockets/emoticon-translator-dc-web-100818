@@ -1,6 +1,6 @@
 require 'yaml'
 
-def load_library
+def load_library()
   emoticons = {"get_meaning" => {}, "get_emoticon" => {}}
   YAML.load_file('emoticons.yml').each do |meaning, japanese, english|
     emoticons[get_meaning][japanese] = meaning
