@@ -11,13 +11,13 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(path, emoticon)
-  emoti_hash = load_library('./lib/emoticons.yml')
-  japanese_emoticon = ""
-  japanese_emoticon = emoti_hash["get_emoticon"][emoticon]
-    if  japanese_emoticon = nil
+  if emoti_hash = load_library('./lib/emoticons.yml')
+    japanese_emoticon = ""
+    japanese_emoticon = emoti_hash["get_emoticon"][emoticon]
+  else  japanese_emoticon
     "Sorry, that emoticon was not found"
-    end
-  japanese_emoticon
+  end
+  
   #binding.pry
 end
 
