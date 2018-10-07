@@ -12,7 +12,7 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   load_library('./lib/emoticons.yml')
-  [emoticons][get_japanese_emoticon][emoticon]
+  #[emoticons][get_japanese_emoticon][emoticon]
    
   if  japanese_emoticon = nil
     "Sorry, that emoticon was not found"
