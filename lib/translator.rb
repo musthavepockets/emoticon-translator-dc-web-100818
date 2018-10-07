@@ -10,8 +10,8 @@ def load_library(path)
   emoticons
 end
 
-def get_japanese_emoticon(load_library, emoticon)
-  load_library(path)
+def get_japanese_emoticon(path, emoticon)
+  load_library('./lib/emoticons.yml')
   #get_meaning.fetch(emoticon)
 end
 
